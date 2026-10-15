@@ -1,0 +1,15 @@
+# Secrets and environment files
+.env
+.env.*
+
+# Local server / IDE
+.vscode/
+.idea/
+*.log
+
+# Node.js dependencies and generated output
+learn-node-ts/node_modules/
+learn-node-ts/dist/
+
+# Data messages (local dev)
+/data/

@@ -1,0 +1,21 @@
+# Render Blueprint Configuration (render.yaml)
+# Learn more at: https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: cyberdev-portfolio
+    runtime: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: DB_HOST
+        sync: false
+      - key: DB_NAME
+        value: portfolio_db
+      - key: DB_USER
+        sync: false
+      - key: DB_PASS
+        sync: false
